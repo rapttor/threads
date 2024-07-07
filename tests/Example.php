@@ -1,11 +1,11 @@
 <?php
 // composer require rapttor/threads
-require_once(__DIR__."/../src/Threads.php");
+require_once(__DIR__ . "/../src/Threads.php");
 
-$wait = true;
+$wait = false;
 $debug = true;
 
-\RapTToR\Threads\Thread::run(array(
+\RapTToR\Threads::run(array(
     "process" => function ($data = false) {
         var_dump('run A: ', $data);
         for ($i = 0; $i < 3; $i++) {
@@ -16,7 +16,7 @@ $debug = true;
     }
 ));
 
-\RapTToR\Threads\Thread::run(array(
+\RapTToR\Threads::run(array(
     "process" => function ($data = false) {
         var_dump('run B: ', $data);
         for ($i = 0; $i < 3; $i++) {
