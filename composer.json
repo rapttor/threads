@@ -1,6 +1,6 @@
 {
     "name": "rapttor/threads",
-    "description": "Threads is a powerful and user-friendly PHP library designed to simplify parallel processing in PHP applications. ",
+    "description": "Threads is a powerful and user-friendly PHP library designed to simplify parallel processing in PHP applications",
     "version": "1.0.0",
     "keywords": [
         "php",
