@@ -59,15 +59,17 @@ Example
     ));
 
     // if you would like to wait...
-    pcntl_wait($status);
+    // pcntl_wait($status);
     echo "app done.";
 
 Test output: 
 ------------
 ```
 main process pid = N0 
+~ (back to prompt...)
 starting process: N1
 starting process: N2
+app done.
 string(7) "run A: "
 bool(false)
 A 0
@@ -81,5 +83,4 @@ N1 process finished
 N2 process finished
 BB 2
 N0 process finished
-app done.
 ```
